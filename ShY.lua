@@ -6,6 +6,7 @@ local offsetgyat = 10
 local TweenService = game:GetService("TweenService")
 
 local entity = game:GetObjects("rbxassetid://11621254476")[1]
+entity.Name = "SHY"
 entity.Parent = workspace
 local primary_part = entity:FindFirstChildWhichIsA("BasePart") or entity:FindFirstChildWhichIsA("Part")
 entity.PrimaryPart = primary_part
