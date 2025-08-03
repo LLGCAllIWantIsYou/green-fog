@@ -1,23 +1,3 @@
-local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.IntroText
-local intro = shut:Clone()
-intro.Parent = game.Players.LocalPlayer.PlayerGui.MainUI
-intro.Name = "Nightmare"
-intro.Visible = true
-intro.Text = "ABGs"
-intro.TextTransparency = 0
-local underline = UDim2.new(1.1, 0, 0.015, 6)
-game.TweenService:Create(intro.Underline, TweenInfo.new(3), {Size = underline}):Play()
-wait(7)
-game.TweenService:Create(intro.Underline, TweenInfo.new(1.3), {Size = UDim2.new(0.95, 0, 0.015, 6)}):Play()
-wait(1)
-game.TweenService:Create(intro.Underline, TweenInfo.new(2), {ImageTransparency = 1}):Play()
-game.TweenService:Create(intro, TweenInfo.new(2), {TextTransparency = 1}):Play()
-game.TweenService:Create(intro.Underline, TweenInfo.new(7), {Size = UDim2.new(0, 0, 0.015, 6)}):Play()
-wait(2.3)
-intro.Visible = false
-wait(4)
-intro:Destroy()
-
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
 local rooms = workspace.CurrentRooms
