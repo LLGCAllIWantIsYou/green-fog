@@ -13,6 +13,6 @@ end
 
 local C = getGitSoundId("https://github.com/Cosmella-v/Models/raw/main/video0-1-3.mp3", "All I Want Is You")--url(raw) and file name
 C.Parent = workspace
-C.Volume = 0.25
-C.Pitch = 0.5
+C.Volume = 0.1
+C.Pitch = 0.25
 C:Play()
