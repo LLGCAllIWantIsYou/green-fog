@@ -19,10 +19,11 @@ sg.Parent = pg
 local il = Instance.new("ImageLabel")
 il.Name = "iiLabel"
 il.Image = Id
-il.ImageRectOffset = Vector2.new(0, 0, 0)
 il.BackgroundTransparency = 1
 il.Size = UDim2.new(1, 0, 1, 0)
 il.Position = UDim2.new(0.5, 0, 0.5, 0)
+il.AnchorPoint = Vector2.new(0.5, 0.5)
+il.ScaleType = Enum.ScaleType.Fit
 il.Parent = sg
 
 local Tween = ts:Create(il, TweenInfo.new(5), {ImageTransparency = 1})
@@ -46,3 +47,4 @@ au:Destroy()
 if p.Character:FindFirstChildOfClass("Humanoid").Health <= 0 then
     game:GetService("ReplicatedStorage").GameStats["Player_" .. p.Name].Total.DeathCause.Value = "Disgust"
 end
+    
